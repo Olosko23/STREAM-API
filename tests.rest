@@ -1,0 +1,26 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/channels
+
+###
+POST http://localhost:8080/channels
+Content-Type: application/json
+
+{
+    "name" : "Sky Sports Golf",
+    "url" : "https://wikisport.click/embed/skygolf.php",
+    "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Sky_Sport_Golf_-_Logo_2018.svg/2560px-Sky_Sport_Golf_-_Logo_2018.svg.png"
+}
+
+###
+PATCH  http://localhost:8080/channels/64857c8bc633b517733aeaa4
+Content-Type: application/json
+
+{
+    "name" : "ESPN",
+    "url" : "https://wikisport.click/embed/espn.php",
+    "logo" : "https://1000logos.net/wp-content/uploads/2021/02/ESPN-logo.jpg"
+}
+
